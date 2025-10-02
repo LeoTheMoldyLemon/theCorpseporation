@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://btveqgjha5nuq"]
+
+[ext_resource type="Script" uid="uid://0h04hhs83bfj" path="res://scripts/creatureSlot.gd" id="1_w7fg0"]
+[ext_resource type="Texture2D" uid="uid://mvudwpikoh2r" path="res://sprites/GameJamCardBack.png" id="2_e8tcm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r3fl7"]
+size = Vector3(2.09375, 2.3328857, 1)
+
+[node name="CreatureSlot" type="Node3D"]
+script = ExtResource("1_w7fg0")
+metadata/_custom_type_script = "uid://0h04hhs83bfj"
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_r3fl7")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.345, 0, 0, 0, 0.345, 0, 0, 0, 0.345, 0, 0, 0)
+texture = ExtResource("2_e8tcm")

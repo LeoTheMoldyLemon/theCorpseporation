@@ -1,0 +1,20 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://dc28r0v01dq73"]
+
+[ext_resource type="Texture2D" uid="uid://dy3ugbegv6lx1" path="res://sprites/guycard.png" id="1_4t5ji"]
+
+[resource]
+resource_name = "test"
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4t5ji")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]

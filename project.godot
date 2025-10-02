@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="The Corpseporation"
+run/main_scene="uid://dyfm24oiltmf1"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[layer_names]
+
+3d_physics/layer_1="mouse"
 
 [rendering]
 
