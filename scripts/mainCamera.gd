@@ -2,6 +2,9 @@ extends Camera3D
 
 class_name MainCamera
 
+static var instance: MainCamera;
+func _init():
+	MainCamera.instance = self
 
 func get_width_at_z(z:float):
 	return self.get_height_at_z(z)* get_viewport().size.aspect();

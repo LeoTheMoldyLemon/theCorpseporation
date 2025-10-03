@@ -11,10 +11,12 @@ script = ExtResource("1_w7fg0")
 metadata/_custom_type_script = "uid://0h04hhs83bfj"
 
 [node name="Area3D" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("BoxShape3D_r3fl7")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(0.345, 0, 0, 0, 0.345, 0, 0, 0, 0.345, 0, 0, 0)
+transform = Transform3D(0.345, 0, 0, 0, 0.345, 0, 0, 0, 0.345, 0, 0, -0.37522644)
 texture = ExtResource("2_e8tcm")
